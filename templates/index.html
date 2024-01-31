@@ -39,13 +39,15 @@
 
     <body class="{{ config.extra.lagomorph_theme }} {% if config.extra.lagomorph_reverse %}layout-reverse{% endif %}">
       <script type="module" src="/scripts/bunny-rotate.js"></script>
+      <script type="module" src="/scripts/minimap.js"></script>
+      <canvas id='minimap'></canvas>
         {% block sidebar %}
             <div class="sidebar">
                 <div id="threejs-canvas-container"></div>
                 <div class="container {% if config.extra.lagomorph_sticky %}sidebar-sticky{% endif %}">
                     <div class="sidebar-about">
                         {% block sidebar_about %}
-                            <a href="{{ config.base_url }}"><h1>{{ config.title }}</h1></a>
+                            <!--<a href="{{ config.base_url }}"><h1>{{ config.title }}</h1></a>-->
                             {% if config.description %}
                             <p class="lead">{{config.description}}</p>
                             {% endif %}

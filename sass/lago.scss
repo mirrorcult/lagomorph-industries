@@ -2,6 +2,15 @@ html {
     font-family: "Courier Prime", monospace
 }
 
+#minimap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+}
+
 #threejs-canvas-container {
     display: flex;
     max-height: 300px;
@@ -40,6 +49,13 @@ body.theme-lago {
 /* Theme */
 .theme-lago .sidebar {
     background-color: rgb(24, 24, 24);
+    background-image: linear-gradient(
+    to bottom,
+    rgb(24 24 24) 60%,
+    rgba(0, 0, 0, 0) 60% 100%
+    ), url("/images/grid.png");
+    background-position: bottom;
+    mask: linear-gradient(-90deg, rgba(0,0,0,0), rgba(0,0,0,1) 30%);
 }
 
 .theme-lago .post-title {
