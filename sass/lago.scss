@@ -1,3 +1,7 @@
+html {
+    font-family: "Courier Prime", monospace
+}
+
 #threejs-canvas-container {
     display: flex;
     max-height: 300px;
@@ -25,9 +29,17 @@
 
 }
 
+body.theme-lago {
+    background-color: rgb(40, 40, 40)
+}
+
+.theme-lago .post-title > a {
+    color: #fff
+}
+
 /* Theme */
 .theme-lago .sidebar {
-    background-color: #9b84f5;
+    background-color: rgb(24, 24, 24);
 }
 
 .theme-lago .post-title {

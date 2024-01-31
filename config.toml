@@ -8,7 +8,7 @@ compile_sass = true
 build_search_index = true
 
 title = "LGMPH\nINDST"
-description = "A clean blogging theme"
+description = ""
 
 [markdown]
 # Whether to do syntax highlighting

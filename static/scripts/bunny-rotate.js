@@ -24,7 +24,7 @@ if (type == 0) {
 const geometry = new THREE.WireframeGeometry(shapeGeometry);
 
 const lineMaterial = new THREE.LineBasicMaterial( {
-    color: 0xffffff,
+    color: 0x6f5abf,
 	depthTest: true,
 	opacity: 0.75,
 	transparent: true,
