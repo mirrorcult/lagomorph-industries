@@ -60,14 +60,14 @@ const line = new THREE.LineSegments( geometry, lineMaterial );
 
 scene.add( line );
 
-const outside = new THREE.DodecahedronGeometry(2.5, 2);
+const outside = new THREE.IcosahedronGeometry(2.5, 3);
 const outsideWire = new THREE.WireframeGeometry(outside);
 
 const outsideLineMaterial = new THREE.LineBasicMaterial( {
 	depthTest: true,
-	opacity: 0.25,
+	opacity: 0.1,
 	transparent: true,
-	color: '#333333',
+	color: '#aaaaaa',
 } );
 
 const outsideLine = new THREE.LineSegments(outsideWire, outsideLineMaterial);
