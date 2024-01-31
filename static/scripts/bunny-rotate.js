@@ -13,13 +13,13 @@ var shapeGeometry = undefined;
 const type = Math.floor(Math.random() * 4);
 const detail = Math.random() > 0.75 ? 1 : 0;
 if (type == 0) {
-	shapeGeometry = new THREE.IcosahedronGeometry( 2.5, detail );
+	shapeGeometry = new THREE.IcosahedronGeometry( 3, detail );
 } else if (type == 1) {
-	shapeGeometry = new THREE.DodecahedronGeometry( 2.5, detail );
+	shapeGeometry = new THREE.DodecahedronGeometry( 3, detail );
 } else if (type == 2) {
-	shapeGeometry = new THREE.TetrahedronGeometry( 2.5, detail );
+	shapeGeometry = new THREE.TetrahedronGeometry( 3, detail );
 } else if (type == 3 ) {
-	shapeGeometry = new THREE.OctahedronGeometry( 2.5, detail );
+	shapeGeometry = new THREE.OctahedronGeometry( 3, detail );
 }
 const geometry = new THREE.WireframeGeometry(shapeGeometry);
 
@@ -60,7 +60,7 @@ const line = new THREE.LineSegments( geometry, lineMaterial );
 
 scene.add( line );
 
-const outside = new THREE.IcosahedronGeometry(2.5, 3);
+const outside = new THREE.IcosahedronGeometry(3, 3);
 const outsideWire = new THREE.WireframeGeometry(outside);
 
 const outsideLineMaterial = new THREE.LineBasicMaterial( {
@@ -74,7 +74,7 @@ const outsideLine = new THREE.LineSegments(outsideWire, outsideLineMaterial);
 scene.add(outsideLine);
 
 const texture = new THREE.TextureLoader().load('../images/buncake-transparent.webp'); 
-const planeGeo = new THREE.PlaneGeometry( 2, 2 );
+const planeGeo = new THREE.PlaneGeometry( 2.5, 2.5 );
 const material = new THREE.MeshBasicMaterial( {map: texture, transparent: true, side: THREE.DoubleSide} );
 const plane = new THREE.Mesh( planeGeo, material );
 scene.add( plane );
