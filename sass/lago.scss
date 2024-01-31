@@ -1,0 +1,35 @@
+#threejs-canvas-container {
+    display: flex;
+    max-height: 300px;
+    justify-content: space-around;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  }
+
+.post-meta {
+    transform: skewY(-2deg) translate(-1rem,-0.4rem);
+    transform-origin: top;
+}
+
+.post-date {
+    margin-bottom: 0rem;
+    font-size: 14px;
+}
+
+.post-title {
+    text-decoration-line: underline;
+    text-underline-offset: 4%;
+    text-decoration-thickness: .25ex;
+    text-rendering: geometricPrecision;
+
+}
+
+/* Theme */
+.theme-lago .sidebar {
+    background-color: #9b84f5;
+}
+
+.theme-lago .post-title {
+    text-decoration-color: #6f5abf;
+}
